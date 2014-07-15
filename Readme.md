@@ -70,16 +70,18 @@ grunt.initConfig({
             repositoryId: grunt.option('repositoryId'),
             artifactId: '<%= pkg.name %>'
         },
-        deployExtension: {
+        extension: {
             file: '<%= target_dir %>/<%= pkg.name %>-<%= version %>-extension.zip',
             classifier: 'extension'
         },
-        deployService: {
+        service: {
             file: '<%= target_dir %>/<%= pkg.name %>-<%= version %>-service.zip',
             classifier: 'service'
         }
     }
 });
+//...
+grunt.registerTask('deploy', ['mavenDeploy:extension', 'mavenDeploy:service']);
 ```
 
 ## writeArtifactList
