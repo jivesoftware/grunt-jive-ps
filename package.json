@@ -1,7 +1,10 @@
 {
-    "name": "grunt-jiveps",
+    "name": "grunt-jive-ps",
     "version": "0.0.1",
-    "devDependencies": {
+    "dependencies": {
         "grunt": "~0.4.4"
+    },
+    "devDependencies": {
+        "grunt-contrib-jshint": "0.10.0"
     }
 }
