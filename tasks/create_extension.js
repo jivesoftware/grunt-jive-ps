@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 
         jive.service.init({use: function() {}, all: function(){}}).then(function() {
 
-            jive.service.extensions().prepare('', "tiles", "apps", "cartridges", "storages").done(function(){
+            jive.service.extensions().prepare('', "tiles", "apps", "cartridges", "storages", "services").done(function(){
                 process.chdir(originalCwd);
                 process.nextTick(function() {
                     done();
