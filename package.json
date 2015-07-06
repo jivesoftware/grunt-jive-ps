@@ -1,8 +1,13 @@
 {
     "name": "grunt-jive-ps",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jivesoftware/grunt-jive-ps.git"
+    },
     "dependencies": {
-        "grunt": "~0.4.4"
+        "grunt": "~0.4.4",
+        "jive-sdk": ">0.1.189"
     },
     "devDependencies": {
         "grunt-contrib-jshint": "0.10.0"
